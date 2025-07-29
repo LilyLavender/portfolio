@@ -33,7 +33,9 @@ function updateCursor(e) {
   showCircles()
 
   if (circleg.value) {
-    circleg.value.style.transform = `translate(${e.clientX - 25}px, ${e.clientY - 25}px)`
+    circleg.value.style.left = `${e.clientX + window.scrollX - 25}px`;
+    circleg.value.style.top = `${e.clientY + window.scrollY - 25}px`;
+    circleg.value.style.transform = `none`;
   }
   if (circleb.value) {
     circleb.value.style.transform = `translate(${e.clientX - 45}px, ${e.clientY - 45}px)`
@@ -54,9 +56,9 @@ function cloneGooeyTargets() {
     const rect = original.getBoundingClientRect()
 
     const clone = original.cloneNode(true)
-    clone.style.position = 'fixed'
-    clone.style.left = `${rect.left}px`
-    clone.style.top = `${rect.top}px`
+    clone.style.position = 'absolute';
+    clone.style.left = `${rect.left + window.scrollX}px`;
+    clone.style.top = `${rect.top + window.scrollY}px`;
     clone.style.margin = '0'
     clone.style.pointerEvents = 'none'
     clone.style.zIndex = '-3'
@@ -89,7 +91,6 @@ onUnmounted(() => {
 
 <style scoped>
 .circle {
-  position: fixed;
   top: 0;
   left: 0;
   border-radius: 50%;
@@ -100,6 +101,7 @@ onUnmounted(() => {
 }
 
 .circle-green {
+  position: absolute;
   width: 50px;
   height: 50px;
   background: #1a6c07;
@@ -107,6 +109,7 @@ onUnmounted(() => {
 }
 
 .circle-black {
+  position: fixed;
   width: 90px;
   height: 90px;
   background: black;
