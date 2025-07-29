@@ -69,3 +69,21 @@ button:focus-visible {
   color: #f4f4f4;
   text-decoration: none;
 }
+
+.z-1 {
+  z-index: 1;
+}
+
+.position-relative {
+  position: relative;
+}
+
+/* Gooey effect */
+.gooey-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  contain: layout;
+  filter: url(#goo);
+}

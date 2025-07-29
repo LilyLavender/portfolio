@@ -2,8 +2,8 @@
   <div class="home">
     <h1>Lilian Schally</h1>
     <p>Web and Software Developer</p>
-    <router-link to="/resume" class="button">Resume</router-link>
-    <router-link to="/development" class="button">Portfolio</router-link>
+    <router-link to="/resume" class="button gooey">Resume</router-link>
+    <router-link to="/development" class="button gooey">Portfolio</router-link>
     <div class="social unvisitable">
       <a href="https://github.com/LilyLavender" target="_blank">
         <i class="fab fa-github"></i>

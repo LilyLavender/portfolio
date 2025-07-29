@@ -23,5 +23,6 @@ import { RouterLink } from 'vue-router';
   padding: 1rem;
   width: 33%;
   margin: 0 auto;
+  z-index: 1;
 }
 </style>
