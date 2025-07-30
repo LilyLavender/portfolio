@@ -1,9 +1,17 @@
 <template>
   <div class="home">
     <h1>Lilian Schally</h1>
-    <p>Web and Software Developer</p>
-    <router-link to="/resume" class="button gooey">Resume</router-link>
-    <router-link to="/development" class="button gooey">Portfolio</router-link>
+    <p>Web and Software Development Student</p>
+    <div class="router-buttons unvisitable">
+      <router-link to="/resume" class="button gooey">
+        <i class="fas fa-file"></i>
+        Resume
+      </router-link>
+      <router-link to="/development" class="button gooey">
+        <i class="fas fa-images"></i>
+        Portfolio
+      </router-link>
+    </div>
     <div class="social unvisitable">
       <a href="https://github.com/LilyLavender" target="_blank">
         <i class="fab fa-github"></i>
@@ -23,14 +31,16 @@
   text-align: center;
   margin-top: 4rem;
 }
-.button {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: #1a6c07;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
+.router-buttons {
+  display: flex;
+  gap: 1rem; 
+}
+.router-buttons .button {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.router-buttons i {
+  margin-right: 5px;
 }
 
 /* Social */

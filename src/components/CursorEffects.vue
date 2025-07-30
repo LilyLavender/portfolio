@@ -26,7 +26,7 @@ function showCircles() {
   fadeTimeout = setTimeout(() => {
     if (circleg.value) circleg.value.style.opacity = '0'
     if (circleb.value) circleb.value.style.opacity = '0'
-  }, 2500)
+  }, 2000)
 }
 
 function updateCursor(e) {
@@ -59,7 +59,11 @@ function cloneGooeyTargets() {
     clone.style.position = 'absolute';
     clone.style.left = `${rect.left + window.scrollX}px`;
     clone.style.top = `${rect.top + window.scrollY}px`;
+    clone.style.width = `${rect.width}px`;
+    clone.style.height = `${rect.height}px`;
     clone.style.margin = '0'
+    clone.style.padding = '0'
+    clone.innerHTML = ''
     clone.style.pointerEvents = 'none'
     clone.style.zIndex = '-3'
     clone.classList.add('cloned-gooey')
@@ -97,7 +101,7 @@ onUnmounted(() => {
   pointer-events: none;
   opacity: 0;
 
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .circle-green {
