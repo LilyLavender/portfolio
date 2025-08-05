@@ -1,17 +1,31 @@
 <template>
   <div class="home">
-    <h1>Lilian Schally</h1>
-    <p>Web and Software Development Student</p>
+    <!-- Title / desc -->
+    <h1 class="slide-in">Lilian Schally</h1>
+    <hr />
+    <h3 class="slide-in delay-1">Web and Software Development Student</h3>
+    <p class="slide-in delay-2 connect-top">...but you already knew that.</p>
+    <p class="slide-in delay-3 connect-bottom">Learn more about me in my portfolio!</p>
+
+    <div class="spacer"></div>
+
+    <!-- Nav buttons -->
     <div class="router-buttons unvisitable">
-      <router-link to="/resume" class="button gooey">
-        <i class="fas fa-file"></i>
-        Resume
-      </router-link>
       <router-link to="/development" class="button gooey">
-        <i class="fas fa-images"></i>
-        Portfolio
+        View my Portfolio!
+        <br>
+        <i class="far fa-images large-i"></i>
+      </router-link>
+      <router-link to="/resume" class="button gooey">
+        ..or the Resume!
+        <br>
+        <i class="fas fa-file large-i"></i>
       </router-link>
     </div>
+
+    <div class="spacer"></div>
+
+    <!-- Social links -->
     <div class="social unvisitable">
       <a href="https://github.com/LilyLavender" target="_blank">
         <i class="fab fa-github"></i>
@@ -33,7 +47,8 @@
 }
 .router-buttons {
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
+  align-items: center;
 }
 .router-buttons .button {
   padding-top: 2rem;
@@ -41,6 +56,23 @@
 }
 .router-buttons i {
   margin-right: 5px;
+}
+a {
+  width: fit-content;
+  height: fit-content;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+.large-i {
+  font-size: xx-large;
+  margin-top: 0.75rem;
+}
+.connect-top {
+  margin-bottom: 0;
+}
+.connect-bottom {
+  margin-top: 0;
 }
 
 /* Social */
@@ -54,5 +86,33 @@ i {
 }
 a {
   margin: 0.5rem;
+}
+
+/* Spacer */
+.spacer {
+  height: 2rem;
+}
+
+/* Animation */
+.slide-in {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 1.6s;
+}
+.delay-3 {
+  animation-delay: 2.0s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
