@@ -78,6 +78,7 @@ onMounted(() => {
   window.addEventListener('resize', cloneGooeyTargets)
   window.addEventListener('scroll', cloneGooeyTargets)
   requestAnimationFrame(cloneGooeyTargets)
+  setTimeout(() => { requestAnimationFrame(cloneGooeyTargets); }, 10);
 })
 
 watch(() => route.fullPath, () => {
