@@ -45,7 +45,7 @@ const projects = [
     title: 'Vehicle Vault',
     description: 'Vehicle Vault was my group capstone project, and is used internally at Waukesha County Technical College for tracking information on the college\'s vehicle inventory. Throughout the 16 weeks our group worked on the project, we were keeping in close contact with our product owners and using Scrum\'s framework. I served as the group\'s Scrum Master for the duration of the class.',
     tags: [ 'Vue', 'C#', 'Vuetify', 'ASP.NET', 'Entity Framework', 'SQL', 'JavaScript', 'SCSS' ],
-    images: [],
+    images: [ 'https://youtu.be/ZhOqReURmCI?start=3337' ],
     downloadText: 'For internal use at WCTC only',
     downloadIcon: 'fas fa-lock'
   },

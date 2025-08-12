@@ -166,7 +166,8 @@ function getYouTubeEmbedUrl(link) {
   const videoId = link.includes('youtu.be')
     ? link.split('/').pop()
     : new URL(link).searchParams.get('v')
-  return `https://www.youtube.com/embed/${videoId}?controls=0&fs=1&rel=0&showinfo=0&modestbranding=1`
+  const separator = videoId.includes('?') ? '&' : '?'
+  return `https://www.youtube.com/embed/${videoId}${separator}controls=0&fs=1&rel=0&showinfo=0&modestbranding=1`
 }
 
 function nextMedia() {
