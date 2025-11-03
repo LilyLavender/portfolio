@@ -155,7 +155,7 @@ const tagColors = {
 }
 
 function getImagePath(filename) {
-  return new URL(`/src/assets/${filename}`, import.meta.url).href
+  return new URL(`/src/assets/portfolio/${filename}`, import.meta.url).href
 }
 
 function isYouTubeLink(link) {
