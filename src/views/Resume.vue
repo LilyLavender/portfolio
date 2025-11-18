@@ -22,7 +22,7 @@
       <p><strong>Web and Software Development</strong> (Associate of Applied Science)</p>
       <p>Waukesha County Technical College — Pewaukee, WI</p>
       <ul>
-        <li>Expected Graduation: Fall 2025</li>
+        <li>Expected Graduation: May 2026</li>
         <li><b>Notable classes:</b></li>
         <ul class="classes-list">
           <li>JavaScript 2</li>
