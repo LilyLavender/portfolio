@@ -3,7 +3,7 @@
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/resume">Resume</RouterLink>
     <RouterLink to="/development">Portfolio</RouterLink>
-    <RouterLink to="/photography">Photography</RouterLink>
+    <!-- <RouterLink to="/photography">Photography</RouterLink> -->
   </header>
 </template>
 

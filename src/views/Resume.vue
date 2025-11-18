@@ -2,7 +2,7 @@
   <div class="resume-page container py-5">
     <div class="resume-header">
       <h1>Lilian Schally</h1>
-      <a href="./src/assets/resume/Resume - Lilian Schally.pdf" download class="button gooey unvisitable">
+      <a href="https://github.com/LilyLavender/portfolio/blob/main/src/assets/resume/Resume%20-%20Lilian%20Schally.pdf" download class="button gooey unvisitable">
         <i class="fas fa-file-arrow-down"></i>
         Download
       </a>
